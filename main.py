@@ -1,3 +1,4 @@
+import os
 import sys
 
 
@@ -6,7 +7,12 @@ def main():
         print("Specify the path to a single folder")
         sys.exit(1)
     else:
-        print(sys.argv[1])
+        try:
+            folder_path = sys.argv[1]
+            os.chdir(folder_path)
+            print(f"Changed working directory to: {folder_path}")
+        except FileNotFoundError:
+            print(f"The folder '{folder_path}' does not exist.")
 
 
 if __name__ == "__main__":
