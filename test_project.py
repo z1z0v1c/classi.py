@@ -5,7 +5,7 @@ import pytest
 from project import change_dir, make_dir, sortify_files
     
     
-def test_change_dir_correct_dir():
+def test_change_dir():
     with tempfile.TemporaryDirectory() as temp_dir:
         original_dir = os.getcwd()
         change_dir(temp_dir)
@@ -22,7 +22,7 @@ def test_change_dir_wrong_dir():
     assert exc_info.value.code == 1
     
     
-def test_make_dir_not_existing():
+def test_make_dir():
     original_dir = os.getcwd()
     new_dir = Path(original_dir + "/new/dir")
     make_dir(new_dir)
@@ -32,7 +32,7 @@ def test_make_dir_not_existing():
     os.rmdir(new_dir)
 
 
-def test_sortify_files_correct_dir():
+def test_sortify_files():
     original_dir = os.getcwd()
     
     with tempfile.TemporaryDirectory() as source_dir:
