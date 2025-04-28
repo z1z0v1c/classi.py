@@ -50,17 +50,17 @@ def main():
 
     make_dir(dest_dir)
 
-    sortify_files(src_dir, dest_dir, args.recursive, args.remove_duplicates)
+    classify_files(src_dir, dest_dir, args.recursive, args.remove_duplicates)
 
 
-def sortify_files(src_dir, dest_dir, recursive, remove_duplicates):
+def classify_files(src_dir, dest_dir, recursive, remove_duplicates):
     contents = os.listdir(src_dir)
     unique_hashes = set()
 
     for file in contents:
         logging.debug(f"File: {file}")
         if src_dir.joinpath(file).is_dir() and recursive:
-            sortify_files(src_dir.joinpath(file), dest_dir, recursive, remove_duplicates)
+            classify_files(src_dir.joinpath(file), dest_dir, recursive, remove_duplicates)
             continue
 
         if remove_duplicates and not src_dir.joinpath(file).is_dir():
