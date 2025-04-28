@@ -1,23 +1,17 @@
-# **sorti.py** - a file organizer🚀
-#### Video Demo:  <URL HERE>
-#### Description: 
+# ***sorti.py*** ➖ a file organizer 🐾
 
-**sorti.py** is a lightweight Python script designed to automate the organization of files within a specified directory. By categorizing files based on their extensions, it streamlines the process of maintaining a tidy file system.
+### ➖ Overview ➖ 
 
-#### Features:
+**sorti.py** is a lightweight Python script for automating file organization within a specified directory. Categorizes files based on their extensions and takes input and output directories as command line arguments.
 
-- **Automated File Organization**: Sorts files into folders based on their extensions.
-- **Customizable Configuration**: Easily define sorting rules via a `config.ini` file.
-- **Cross-Platform Compatibility**: Runs seamlessly on Windows, macOS, and Linux.
+### ➖ Features ➖
+
+- **Automated File Organization**: Sorts files into directories based on their extensions.
+- **Customizable Configuration**: Define directory names and file extensions in a `config.ini` file.
+- **Cross-Platform Compatibility**: Runs on Windows, macOS, and Linux.
 - **Simple and Lightweight**: Minimal dependencies for quick setup and execution.
 
-#### Getting Started:
-
-#### Prerequisites
-
-- Python 3.8 or higher
-
-#### Installation
+### ➖ Getting Started ➖
 
 1. **Clone the Repository**:
 
@@ -41,7 +35,7 @@
    python -m pip install -r requirements.txt
    ```
 
-#### Usage instructions:
+### ➖ Usage ➖
 
 Run the script from the project's root directory using the following command:
 
@@ -51,7 +45,7 @@ python project.py
 
 The script will read the `config.ini` file and organize files in the current directory accordingly.
 
-Also, additional command line options can be provided. Below is the full list:
+Command line arguments:
 
 ```
 --input, -i               Path to the input directory
@@ -60,13 +54,13 @@ Also, additional command line options can be provided. Below is the full list:
 --delete-duplicates, -d   Delete duplicate files
 ```
 
-To run the unit tests from the test file run the following command:
+To run the unit tests execute the following command:
 
 ```bash
 pytest test_project.py
 ```
 
-#### Configuration:
+### ➖ Configuration ➖
 
 The script utilizes a `config.ini` file to determine sorting rules. Below is a sample configuration:
 
@@ -84,7 +78,7 @@ extensions = .jpg,.png,.svg
 In this example, files with `.py`, `.go` and `.c` extensions will be moved to the `Code` directory, `.txt`, `.pdf` and `.docx` to `Documents`, and `.jpg`, `.png` and `.svg` to `Pictures`.
 
 
-####  Project File Structure:
+### ➖ File Structure ➖
 
 ```plaintext
 sorti.py/
@@ -95,4 +89,9 @@ sorti.py/
 └── test_project.py      # Test cases for the script
 ```
 
-*Happy organizing!*
+### ➖ Contributing ➖
+
+Contributions are welcome!   Feel free to fork the repository and submit a pull request for improvements or bug fixes. 
+For questions or suggestions, please open an [issue](https://github.com/z1z0v1c/sorti.py/issues).
+
+#### *Happy organizing!* 🐾
