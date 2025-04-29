@@ -5,10 +5,10 @@
 
 #### *(Under development)*
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/z1z0v1c/sorti.py/python-package.yml?branch=master)
-![GitHub last commit](https://img.shields.io/github/last-commit/z1z0v1c/sorti.py)
-![GitHub issues](https://img.shields.io/github/issues/z1z0v1c/sorti.py)
-![License](https://img.shields.io/badge/license-Unlicense-blue)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/z1z0v1c/classi.py/python-package.yml?branch=master)
+![GitHub last commit](https://img.shields.io/github/last-commit/z1z0v1c/classi.py)
+![GitHub issues](https://img.shields.io/github/issues/z1z0v1c/classi.py)
+![License](https://img.shields.io/github/license/z1z0v1c/sorti.py)
 
 
 ## Features 
