@@ -1,23 +1,30 @@
-# ***sorti.py*** ➖ a file organizer 🐾
+# ***classi.py*** 🐾
 
-### ➖ Overview ➖ 
 
-**sorti.py** is a lightweight Python script for automating file organization within a specified directory. Categorizes files based on their extensions and takes input and output directories as command line arguments.
+**classi.py** is a lightweight Python script for automating file organization within a specified directory. Categorizes files based on their extensions and takes input and output directories as command line arguments.
 
-### ➖ Features ➖
+#### *(Under development)*
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/z1z0v1c/sorti.py/python-package.yml?branch=master)
+![GitHub last commit](https://img.shields.io/github/last-commit/z1z0v1c/sorti.py)
+![GitHub issues](https://img.shields.io/github/issues/z1z0v1c/sorti.py)
+![License](https://img.shields.io/badge/license-Unlicense-blue)
+
+
+## Features 
 
 - **Automated File Organization**: Sorts files into directories based on their extensions.
 - **Customizable Configuration**: Define directory names and file extensions in a `config.ini` file.
 - **Cross-Platform Compatibility**: Runs on Windows, macOS, and Linux.
 - **Simple and Lightweight**: Minimal dependencies for quick setup and execution.
 
-### ➖ Getting Started ➖
+## Getting Started
 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/z1z0v1c/sorti.py.git
-   cd sorti.py
+   git clone https://github.com/z1z0v1c/classi.py.git
+   cd classi.py
    ```
 
 2. **Create a Virtual Environment (Optional but Recommended)**:
@@ -35,7 +42,7 @@
    python -m pip install -r requirements.txt
    ```
 
-### ➖ Usage ➖
+## Usage
 
 Run the script from the project's root directory using the following command:
 
@@ -57,10 +64,10 @@ Command line arguments:
 To run the unit tests execute the following command:
 
 ```bash
-pytest test_project.py
+pytest test_classi.py
 ```
 
-### ➖ Configuration ➖
+## Configuration
 
 The script utilizes a `config.ini` file to determine sorting rules. Below is a sample configuration:
 
@@ -78,18 +85,18 @@ extensions = .jpg,.png,.svg
 In this example, files with `.py`, `.go` and `.c` extensions will be moved to the `Code` directory, `.txt`, `.pdf` and `.docx` to `Documents`, and `.jpg`, `.png` and `.svg` to `Pictures`.
 
 
-### ➖ File Structure ➖
+## File Structure
 
 ```plaintext
-sorti.py/
+classi.py/
 ├── config.ini           # Configuration file for sorting rules
-├── project.py           # Main script for file organization
+├── classi.py            # Main script for file organization
 ├── README.md            # Project documentation
 ├── requirements.txt     # List of dependencies
-└── test_project.py      # Test cases for the script
+└── test_classi.py       # Test cases for the script
 ```
 
-### ➖ Contributing ➖
+## Contributing
 
 Contributions are welcome!   Feel free to fork the repository and submit a pull request for improvements or bug fixes. 
 For questions or suggestions, please open an [issue](https://github.com/z1z0v1c/sorti.py/issues).
